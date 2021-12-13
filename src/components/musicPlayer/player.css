@@ -1,0 +1,187 @@
+.playerBottom{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-player{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.controler{
+    width: 200px;
+    height: 100%;
+  
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.progress{
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    transition: all 0.3s;
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+
+.progressbar{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: yellowgreen;;
+    overflow: hidden;
+    
+}
+
+
+.progressbar span:nth-of-type(2){
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+}
+
+
+.progressbar span{
+    font-size: 10px;
+    transform: translateY(100px);
+   
+   
+}
+.controler button{
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+.controler button:nth-of-type(2) > i{
+    font-size: 30px;
+}
+
+.playerBottom:hover .progress{
+    height: 17px;
+    transition: all 0.3s;
+    
+}
+.playerBottom:hover .progress .progressbar span{
+    transform: translateY(0px);
+    
+}
+
+
+.title{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellowgreen;
+}
+
+
+.title h3{
+    padding: 0 10px;
+}
+
+
+.wrapper{
+    width: 625px;
+    height: 60px;
+    transition: 0.3 all;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+   
+}
+
+.wrapper:hover{
+    background-color: rgba(153, 205, 50, 0.459);
+    transition: 0.3 all;
+   
+}
+
+
+
+.play_name{
+    display: flex;
+    align-items: center;
+}
+
+.time_download{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: yellowgreen;
+    
+}
+
+
+
+
+.download{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+.player{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    color: #fff;
+    background-color: rgb(17, 21, 255);
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+.title_list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+   
+    padding: 0 20px;
+}
+
+.active{
+ 
+    background:linear-gradient(to right, greenyellow, rgba(50, 0, 230, 0.459)) 
+}
+
+@keyframes music {
+
+    from{
+        background:linear-gradient(to left, greenyellow, rgba(0, 99, 230, 0.459)) !important;
+        transition: 0.3s all;
+    }
+    to{
+        background:linear-gradient(to right, greenyellow, rgba(50, 0, 230, 0.459)) !important;
+        transition: 0.3s all;
+    }
+    
+}
