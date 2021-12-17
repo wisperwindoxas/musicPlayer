@@ -172,16 +172,3 @@
  
     background:linear-gradient(to right, greenyellow, rgba(50, 0, 230, 0.459)) 
 }
-
-@keyframes music {
-
-    from{
-        background:linear-gradient(to left, greenyellow, rgba(0, 99, 230, 0.459)) !important;
-        transition: 0.3s all;
-    }
-    to{
-        background:linear-gradient(to right, greenyellow, rgba(50, 0, 230, 0.459)) !important;
-        transition: 0.3s all;
-    }
-    
-}
