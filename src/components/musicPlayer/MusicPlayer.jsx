@@ -3,6 +3,8 @@ import './player.css'
 
 
 export default function MusicPlayer({url}) {
+    // create function to get yesterday date
+
     
     const audio = React.useRef()
 
@@ -19,11 +21,6 @@ export default function MusicPlayer({url}) {
         }
     }
  
-    React.useEffect(() =>{
-      
-    },[])
- 
-
     return (
      
 

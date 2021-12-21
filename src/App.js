@@ -11,10 +11,14 @@ function App() {
 
   console.log(urlMusic);
 
+
+ function getUrlAudio(){
+      console.log(urlMusic);
+    }
   return (
 
 
- 
+   
     <div className="App">
           <Audio/>
           <div className='container'>
